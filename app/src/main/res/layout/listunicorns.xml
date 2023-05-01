@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:layout_marginTop="5dp">
+    android:orientation = "vertical">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/ic_lock_idle_low_battery" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/namecolour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pinky (pinkki)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/attack"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="hyökkäys: 7" />
+
+        <TextView
+            android:id="@+id/defence"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:text="puolustus: 2" />
+
+        <TextView
+            android:id="@+id/life"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="elämä: 6/7" />
+
+        <TextView
+            android:id="@+id/experience"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:text="kokemus: 21" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
