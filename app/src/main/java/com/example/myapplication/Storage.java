@@ -29,6 +29,16 @@ public class Storage {
     public ArrayList<Unicorn> getListOfUnicorns() {
         return unicorns;
     }
+
+    public Unicorn getUnicorn(String name){
+        for (Unicorn unicorn : unicorns) {
+            if (unicorn.getUnicornName().equals(name))
+                return unicorn;
+        }
+        return null;
+    }
+
+
 }
 
 

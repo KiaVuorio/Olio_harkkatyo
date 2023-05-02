@@ -83,4 +83,17 @@ public class Unicorn implements Serializable {
         return photo;
     }
 
+    public int attack(){
+        return attack;
+
+    }
+
+    public boolean defence(int attack){
+        life = life-(attack-defence);
+        return life > 0;
+    }
+
+
+
+
 }

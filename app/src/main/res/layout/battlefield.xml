@@ -12,7 +12,7 @@
         android:layout_marginStart="1dp"
         android:layout_marginEnd="2dp"
         android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toTopOf="@+id/battle"
+        app:layout_constraintBottom_toTopOf="@+id/train"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent">
@@ -24,7 +24,7 @@
     </ScrollView>
 
     <TextView
-        android:id="@+id/choosefighter"
+        android:id="@+id/chooseunicorn"
         android:layout_width="344dp"
         android:layout_height="47dp"
         android:layout_marginStart="35dp"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/battle"
+        android:id="@+id/train"
         android:layout_width="240dp"
         android:layout_height="66dp"
         android:layout_marginStart="85dp"
