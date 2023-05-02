@@ -2,4 +2,4 @@
 
 
 ## Video
-[Video esittely](https://lut-my.sharepoint.com/:v:/g/personal/kia_vuorio_student_lut_fi/EXFeqXH0lNpKirKJACtwZ6ABbWP8oLNQGvch7cV0Pu79EQ?e=BvuytX)
+[Video esittely](https://lut-my.sharepoint.com/:v:/g/personal/kia_vuorio_student_lut_fi/EUIgUBpwsvJHuHpnZbCN-h4Bv7P2XT4WS8NWSXgcZwtCeg?e=Jil1Rs)
