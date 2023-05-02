@@ -36,28 +36,28 @@
         <RadioButton
             android:id="@+id/rb1"
             android:layout_width="match_parent"
-            android:layout_height="84dp"
+            android:layout_height="77dp"
             android:text="Valkoinen"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <RadioButton
             android:id="@+id/rb2"
             android:layout_width="match_parent"
-            android:layout_height="82dp"
+            android:layout_height="77dp"
             android:text="Vihreä"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <RadioButton
             android:id="@+id/rb3"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="77dp"
             android:text="Pinkki"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
         <RadioButton
             android:id="@+id/rb4"
             android:layout_width="match_parent"
-            android:layout_height="85dp"
+            android:layout_height="77dp"
             android:text="Oranssi"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
 
@@ -87,41 +87,41 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="106dp"
-        android:layout_height="93dp"
-        app:srcCompat="@drawable/white_unicorn"
-        tools:layout_editor_absoluteX="267dp"
-        tools:layout_editor_absoluteY="29dp" />
+        android:layout_height="77dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup"
+        app:srcCompat="@drawable/white_unicorn" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="101dp"
-        android:layout_height="86dp"
-        app:srcCompat="@drawable/green_unicorn"
-        tools:layout_editor_absoluteX="272dp"
-        tools:layout_editor_absoluteY="122dp" />
+        android:layout_width="106dp"
+        android:layout_height="77dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:srcCompat="@drawable/green_unicorn" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="104dp"
-        android:layout_height="83dp"
-        app:srcCompat="@drawable/pink_unicorn"
-        tools:layout_editor_absoluteX="272dp"
-        tools:layout_editor_absoluteY="208dp" />
+        android:layout_width="106dp"
+        android:layout_height="77dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/pink_unicorn" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="109dp"
-        android:layout_height="85dp"
-        app:srcCompat="@drawable/orange_unicorn"
-        tools:layout_editor_absoluteX="267dp"
-        tools:layout_editor_absoluteY="291dp" />
+        android:layout_width="106dp"
+        android:layout_height="77dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/orange_unicorn" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="115dp"
-        android:layout_height="84dp"
-        app:srcCompat="@drawable/black_unicorn"
-        tools:layout_editor_absoluteX="261dp"
-        tools:layout_editor_absoluteY="376dp" />
+        android:layout_width="106dp"
+        android:layout_height="77dp"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/black_unicorn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

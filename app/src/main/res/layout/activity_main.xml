@@ -8,54 +8,53 @@
 
     <Button
         android:id="@+id/siirraUnicorns"
-        android:layout_width="337dp"
-        android:layout_height="104dp"
-        android:layout_marginTop="16dp"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
         android:onClick="buttonMoveUnicorns"
         android:text="Siirrä Unicorneja"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.405"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/listaaUnicorns" />
 
     <Button
         android:id="@+id/listaaUnicorns"
-        android:layout_width="343dp"
-        android:layout_height="96dp"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
         android:onClick="buttonListUnicorn"
         android:text="Listaa Unicornit"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lisaaUnicorn" />
 
     <Button
         android:id="@+id/lisaaUnicorn"
-        android:layout_width="358dp"
-        android:layout_height="98dp"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="30dp"
         android:onClick="buttonAddUnicorn"
         android:text="Lisää uusi Unicorn"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.445"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/taistelemaanbutton"
-        android:layout_width="348dp"
-        android:layout_height="98dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="24dp"
         android:onClick="buttonBattleUnicorns"
-        android:text="Taistelemaan!"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBottom_toTopOf="@+id/kotiinbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.301"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/siirraUnicorns"
-        app:layout_constraintVertical_bias="0.0" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:icon="@drawable/sword_svgrepo_com"
+        app:iconGravity="top"
+        app:iconSize="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
         android:id="@+id/textView"
@@ -69,32 +68,31 @@
 
     <Button
         android:id="@+id/harjoittelemaanbutton"
-        android:layout_width="352dp"
-        android:layout_height="103dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="524dp"
-        android:layout_marginEnd="35dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="24dp"
         android:onClick="buttonTrainUnicorns"
-        android:text="Harjoittelemaan!"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:icon="@drawable/dumbbell_solid"
+        app:iconGravity="top"
+        app:iconPadding="0dp"
+        app:iconSize="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/taistelemaanbutton"
+        app:layout_constraintStart_toEndOf="@+id/kotiinbutton" />
 
     <Button
         android:id="@+id/kotiinbutton"
-        android:layout_width="352dp"
-        android:layout_height="103dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="544dp"
-        android:layout_marginEnd="35dp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="24dp"
         android:onClick="buttonHome"
-        android:text="Kotiin!"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:icon="@drawable/house_solid"
+        app:iconGravity="top"
+        app:iconSize="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
