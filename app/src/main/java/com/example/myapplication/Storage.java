@@ -34,6 +34,18 @@ public class Storage implements Serializable {
         return unicorns;
     }
 
+    public ArrayList<Unicorn> getHome() {
+        return home;
+    }
+
+    public ArrayList<Unicorn> getBattlefield() {
+        return battlefield;
+    }
+
+    public ArrayList<Unicorn> getTraining() {
+        return training;
+    }
+
     public void addUnicorn(Unicorn unicorn) {
         unicorns.add(unicorn);
         home.add(unicorn);
@@ -84,8 +96,24 @@ public class Storage implements Serializable {
     }
 
         public void moveUnicorns(String Place, Unicorn unicorn){
+        home.remove(unicorn);
+        battlefield.remove(unicorn);
+        training.remove(unicorn);
 
+            switch (Place) {
+                case "home":
+                default:
+                    home.add(unicorn);
+                    break;
 
+                case "battlefield":
+                    battlefield.add(unicorn);
+                    break;
+
+                case "training":
+                    training.add(unicorn);
+                    break;
+            }
         }
 }
 

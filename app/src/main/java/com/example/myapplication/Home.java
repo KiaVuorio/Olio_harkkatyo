@@ -33,7 +33,7 @@ public class Home extends AppCompatActivity {
 
         info = findViewById(R.id.info);
 
-        for (Unicorn unicorn : storage.getUnicorns()) {
+        for (Unicorn unicorn : storage.getHome()) {
             CheckBox cb = new CheckBox(getApplicationContext());
             cb.setText(unicorn.getUnicornName());
             cb.setTextSize(30);

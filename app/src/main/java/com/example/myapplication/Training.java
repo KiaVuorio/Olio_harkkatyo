@@ -33,7 +33,7 @@ public class Training extends AppCompatActivity {
 
         info = findViewById(R.id.info);
 
-        for (Unicorn unicorn : storage.getUnicorns()) {
+        for (Unicorn unicorn : storage.getTraining()) {
             CheckBox cb = new CheckBox(getApplicationContext());
             cb.setText(unicorn.getUnicornName());
             cb.setTextSize(30);

@@ -34,7 +34,13 @@ public class Battle extends AppCompatActivity {
 
         info = findViewById(R.id.info);
 
-        for (Unicorn unicorn : storage.getUnicorns()) {
+        updateList();
+    }
+
+    public void updateList() {
+        scrollView.removeAllViews();
+
+        for (Unicorn unicorn : storage.getBattlefield()) {
 
             CheckBox cb = new CheckBox(getApplicationContext());
             cb.setText(unicorn.getUnicornName());
@@ -65,6 +71,8 @@ public class Battle extends AppCompatActivity {
                 if (fighter1.defence(fighter2.attack())){
                     story = story + fighter1.getUnicornName()+" kuoli\n";
                     fighter2.addExperience(1);
+                    storage.moveUnicorns("home", fighter1);
+                    updateList();
                     break;
                 }
 
