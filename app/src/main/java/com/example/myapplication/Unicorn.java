@@ -9,6 +9,8 @@ public class Unicorn implements Serializable {
     protected int attack;
     protected int defence;
     protected int life;
+
+    protected int current_life;
     protected int experience;
     protected int photo;
 
@@ -18,6 +20,7 @@ public class Unicorn implements Serializable {
         this.attack = attack;
         this.defence = defence;
         this.life = life;
+        current_life = life;
         this.experience = experience;
         this.photo = photo;
 
@@ -64,6 +67,11 @@ public class Unicorn implements Serializable {
     public int getLife() {
         return life;
     }
+    public int getCurrent_life(){return current_life;}
+
+    public void heal(){
+        current_life = life;
+    }
 
 
 
@@ -73,6 +81,11 @@ public class Unicorn implements Serializable {
     public int getExperience() {
         return experience;
     }
+    public void addExperience(int exp) {
+        this.experience += exp;
+        this.attack += exp;
+    }
+
 
 
     public void setPhoto(int photo) {
@@ -89,8 +102,15 @@ public class Unicorn implements Serializable {
     }
 
     public boolean defence(int attack){
-        life = life-(attack-defence);
-        return life > 0;
+        int damage = (attack-defence);
+        if (damage > 0)
+            current_life = current_life-damage;
+        else
+            current_life--;
+        if (current_life < 0){
+            current_life = 0;
+        }
+        return current_life <= 0;
     }
 
 

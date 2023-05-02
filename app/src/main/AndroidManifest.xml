@@ -23,6 +23,9 @@
         <activity android:name=".AddUnicornActivity"/>
         <activity android:name=".ListUnicornActivity"/>
         <activity android:name=".MoveUnicorns"/>
+        <activity android:name=".Battle"/>
+        <activity android:name=".Training"/>
+        <activity android:name=".Home"/>
     </application>
 
 </manifest>

@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.content.Context;
 import android.graphics.Color;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
@@ -43,6 +44,14 @@ private Context context;
         holder.life.setText("Elämät: " + String.valueOf(unicorns.get(position).getLife()));
         holder.experience.setText("Kokemus: " + String.valueOf(unicorns.get(position).getExperience()));
         holder.photo.setImageResource(unicorns.get(position).getPhoto());
+        holder.remove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                unicorns.remove(holder.getAdapterPosition());
+                notifyDataSetChanged();
+                Storage.getInstance().saveUnicorns();
+            }
+        });
         switch (unicorns.get(position).getunicornColour()) {
             case "White":
             default:

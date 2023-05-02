@@ -58,6 +58,7 @@ public class AddUnicornActivity extends AppCompatActivity {
             }
 
             Storage.getInstance().addUnicorn(newUnicorn);
+            Storage.getInstance().saveUnicorns();
         }
     }
 

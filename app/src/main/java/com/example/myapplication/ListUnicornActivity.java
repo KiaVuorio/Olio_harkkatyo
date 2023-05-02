@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
         private Storage storage;
         private RecyclerView recyclerView;
 
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -28,7 +29,8 @@ import androidx.recyclerview.widget.RecyclerView;
             recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
             recyclerView.setAdapter(new UnicornListAdapter(getApplicationContext(), Storage.getInstance().getListOfUnicorns()));
 
-
-
         }
+
+
+
 }

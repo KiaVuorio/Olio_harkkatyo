@@ -11,13 +11,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-public class Training extends AppCompatActivity {
+public class Home extends AppCompatActivity {
 
 
     private Storage storage;
     private LinearLayout scrollView;
 
-    private ArrayList<Unicorn> train = new ArrayList<>();
+    private ArrayList<Unicorn> home = new ArrayList<>();
 
     private TextView info;
 
@@ -25,7 +25,7 @@ public class Training extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.training_area);
+        setContentView(R.layout.home);
 
         storage = Storage.getInstance();
 
@@ -41,9 +41,9 @@ public class Training extends AppCompatActivity {
                 @Override
                 public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                     if (b) {
-                        train.add(unicorn);
+                        home.add(unicorn);
                     } else {
-                        train.remove(unicorn);
+                        home.remove(unicorn);
                     }
                 }
             });
@@ -52,15 +52,14 @@ public class Training extends AppCompatActivity {
     }
 
 
-    public void trainUnicorn(View view){
+    public void restUnicorn(View view) {
         String text = "";
 
-        for (Unicorn unicorn : train){
-            unicorn.addExperience(1);
-            text = text + unicorn.getUnicornName()+"("+unicorn.getunicornColour()+") att: "+ unicorn.getAttack()+"; def: "+unicorn.getDefence()+"; exp: "+unicorn.getExperience()+"; health: "+unicorn.getCurrent_life()+"/"+unicorn.getLife()+"\n";
+        for (Unicorn unicorn : home) {
+            unicorn.heal();
+            text = text + unicorn.getUnicornName() + "(" + unicorn.getunicornColour() + ") att: " + unicorn.getAttack() + "; def: " + unicorn.getDefence() + "; exp: " + unicorn.getExperience() + "; health: " + unicorn.getCurrent_life() + "/" + unicorn.getLife() + "\n";
         }
         info.setText(text);
         storage.saveUnicorns();
     }
 }
-
